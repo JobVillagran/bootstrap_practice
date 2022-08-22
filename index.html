@@ -8,11 +8,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
     <title>Ristorante Con Fusion</title>
+
 </head>
 
 <body>
@@ -295,7 +299,7 @@
             </div>
         </div> -->
 
-        <!-- RESERVATION FORM -->
+        <!-- RESERVATION FORM OLD VERSION -->
         <!-- <div class="row row-content col-md-7 align-items-center">
             <div class="card">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -407,49 +411,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Tooltip -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script> -->
-    <!-- CONTROL BUTTONS CAROUSEL -->
-    <script>
-        $(document).ready(function () {
-            $('#mycarousel').carousel({ interval: 1700 });
-            $('#carouselButton').click(function () {
-                if ($('#carouselButton').children('span').hasClass('fa fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                }
-                else if ($('#carouselButton').children('span').hasClass('fa fa-play')) {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-        });
-    </script>
-    <!-- CONTROLS LOGIN MODAL -->
-    <script>
-        $(document).ready(function () {
-            $("#loginBtn").click(function () {
-                $("#loginModal").modal();
-            });
-        });
-    </script>
-    <!-- CONTROLS RESERVE TABLE MODAL -->
-    <script>
-        $(document).ready(function () {
-            $("#reserveBtn").click(function () {
-                $("#reserveModal").modal();
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 
