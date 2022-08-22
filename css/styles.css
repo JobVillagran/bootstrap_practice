@@ -17,6 +17,7 @@
   margin: 0px auto;
   padding: 70px 30px;
   background: #9575CD;
+  color: floralwhite;
 }
 address {
   font-size: 80%;
@@ -52,4 +53,19 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px;
+}
+.modal-header {
+  background-color: #512DA8;
+}
+.modal-header .modal-title {
+  color: floralwhite;
+}
+.modal-header .modal-title #closeBtn {
+  color: floralwhite;
+}
+#closeBtn {
+  color: floralwhite;
+}
+.modal-body {
+  background-color: #D1C4E9;
 }
